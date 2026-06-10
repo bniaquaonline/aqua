@@ -1,0 +1,8 @@
+# BNI 公式マニュアル原本・全文抽出（著作物のためリポジトリに含めない）
+チャプター運営マニュアル2026年3月版.pdf
+manual.txt
+
+# OS / editor cruft
+.DS_Store
+*.swp
+.claude/
