@@ -1191,7 +1191,7 @@ footer a { color: var(--ink); }
       const t = window.THEME || {};
       const wrap = el('div', 'theme-box');
       wrap.appendChild(el('div', 'theme-title', t.title || ''));
-      wrap.appendChild(el('div', 'theme-desc', t.description || ''));
+      if (t.description) wrap.appendChild(el('div', 'theme-desc', t.description));
       return wrap;
     },
 
