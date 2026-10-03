@@ -68,7 +68,7 @@ window.LINKS = {
   breakoutRoom:    "https://docs.google.com/spreadsheets/d/1pEDZ0BiPhbrmRxixTb5vy5nADNt78PhKCT1pzBg7iJc/edit?usp=sharing",
   bniConnect:      "https://www.bniconnectglobal.com",
   businessBuilder: "https://www.bnibusinessbuilder.com",
-  memberList:      "https://bni-japan.com/aqua/",
+  memberList:      "https://aqua-bni.com/",
   region:          "https://bni-oc.com",
   profileForm:     "https://docs.google.com/forms/d/e/1FAIpQLSfEU8AevbV3GvkGsZAsnA2zU1a-cggW8-r_eaJigEj2DCFSEw/viewform?usp=dialog",
   visitorApply:    "https://forms.gle/aRi7yu469otwoXwL7",
