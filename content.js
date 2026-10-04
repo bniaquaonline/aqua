@@ -68,6 +68,7 @@ window.LINKS = {
   breakoutRoom:    "https://docs.google.com/spreadsheets/d/1pEDZ0BiPhbrmRxixTb5vy5nADNt78PhKCT1pzBg7iJc/edit?usp=sharing",
   bniConnect:      "https://www.bniconnectglobal.com",
   businessBuilder: "https://www.bnibusinessbuilder.com",
+  bniAcademy:      "https://bni.jp/ja/academy",
   memberList:      "https://aqua-bni.com/",
   region:          "https://bni-oc.com",
   profileForm:     "https://docs.google.com/forms/d/e/1FAIpQLSfEU8AevbV3GvkGsZAsnA2zU1a-cggW8-r_eaJigEj2DCFSEw/viewform?usp=dialog",
@@ -122,7 +123,7 @@ window.THEME = {
     "「Get Moving」は「さぁ、動き出そう」という意味です。半期はあっという間に過ぎていきます。<br>"
     + "BNI に入った目的をもう一度思い出し、その目標に近づくための挑戦を、今期みんなで一緒にしていきましょう。<br>"
     + "新メンバーの活躍はチャプターの活躍です。前期に生まれた勢いをそのままに、"
-    + "歴の長いメンバーも新しいメンバーも、一人ひとりが一歩前に出る 12 期にしていきましょう。",
+    + "歴の長いメンバーも新しいメンバーも、「いつもの自分ならやらないこと」に挑戦し、一人ひとりが一歩前に出る 12 期にしていきましょう。",
 };
 
 
@@ -243,7 +244,7 @@ window.SECTIONS = [
         variant: "red",
         label: "Chapter Philosophy",
         html:
-          "「<strong>水のようにしなやかに、流れをつくり出すチーム</strong>」<br>"
+          "「<strong>各地を流れる水のように、人や地域、ビジネスを繋げる</strong>」<br>"
           + "2021 年、コロナ禍のなかオンラインチャプターとして誕生しました。"
           + "「信頼」を土台とした「リファーラル（紹介）」と「トレーニング（学び）」の文化を大切にし、"
           + "互いの成長とビジネスの発展を支え合う関係を実践するチャプターです。",
@@ -351,7 +352,7 @@ window.SECTIONS = [
       {
         type: "box",
         variant: "gray",
-        html: "📚 トレーニングの受講場所：<strong>BNI Business Builder</strong>（<a href=\"" + window.LINKS.businessBuilder + "\" target=\"_blank\" rel=\"noopener\">bnibusinessbuilder.com</a>）",
+        html: "📚 トレーニングの受講場所：<strong>BNI アカデミー</strong>（<a href=\"" + window.LINKS.bniAcademy + "\" target=\"_blank\" rel=\"noopener\">bni.jp/ja/academy</a>）",
       },
 
       { type: "h4", text: "③ 対面イベントやフォーラムに参加しましょう" },
@@ -476,18 +477,7 @@ window.SECTIONS = [
           + "毎週変えることで、メンバーはあなたのビジネスの異なる側面を知ることができます。",
       },
 
-      { type: "h3", text: "③ ツールに登録する" },
-      {
-        type: "checklist",
-        items: [
-          { label: "A", title: "BNI コネクトに登録（PC・スマホ両方）",                 desc: "活動管理・リファーラル記録・メンバーリスト。", linkUrl: "${LINK:bniConnect}",      linkText: "bniconnectglobal.com" },
-          { label: "B", title: "BNI Business Builder に登録（PC・スマホ両方）",       desc: "MSP2.0・MS アドオン・各種トレーニングの受講場所。", linkUrl: "${LINK:businessBuilder}", linkText: "bnibusinessbuilder.com" },
-          { label: "C", title: "LINE グループへの参加",                                 desc: "①AQUA 全体 LINE　②コミュニティ広場　③ひろみ登録　④チーム LINE　⑤メンターコーディネーター LINE — チームと組織分担リーダーから招待が届きます。" },
-          { label: "D", title: "Facebook グループに参加",                               desc: "AQUA の Facebook グループへの参加。招待が届いたら参加してください。" },
-        ],
-      },
-
-      { type: "h3", text: "④ 初回定例会の当日準備" },
+      { type: "h3", text: "③ 初回定例会の当日準備" },
       {
         type: "grid",
         cols: 2,
@@ -569,6 +559,19 @@ window.SECTIONS = [
           },
         ],
       },
+
+      { type: "divider" },
+      { type: "h3", text: "初回定例会チェックリスト" },
+      {
+        type: "grid",
+        cols: 2,
+        cells: [
+          { title: "✅ 6:20 までに入室",          body: "表示名を「ルーム番号／名前／カテゴリー」に変更してください。", accent: true },
+          { title: "✅ ウィークリープレゼン 30 秒", body: "「（カテゴリー）の（名前）です。〇〇な方を紹介してください！」", accent: true },
+          { title: "✅ 宣誓式「はい、誓います。」", body: "倫理規定 6 項目の読み上げ後に宣言 → 正式メンバー加入。" },
+          { title: "✅ 8:45〜 オリエンテーション",  body: "新メンバーブレイクアウトルームでメンターチームがサポートします。" },
+        ],
+      },
     ],
   },
 
@@ -586,26 +589,29 @@ window.SECTIONS = [
         variant: "warn",
         label: "⚠ 期限厳守",
         html:
-          "<strong>MSP2.0：入会後 30 日以内に開始・60 日以内に完了</strong>"
+          "<strong>MSP2.0：入会後 30 日以内に受講</strong>"
           + "（未完了 → カテゴリー解放 = 同業者が入れる状態になります）<br>"
-          + "<strong>MS アドオン：入会後 30 日以内に受講</strong>（メインプレゼン登壇には必須です）",
+          + "<strong>MS アドオン：入会後 60 日以内に受講</strong>（メインプレゼン登壇には必須です）",
       },
 
-      { type: "h3", text: "① 期待値の設定" },
+      { type: "h3", text: "① ツールに登録する" },
       {
-        type: "para",
-        html:
-          "担当メンターと「BNI で何を達成したいか」を明確にしましょう。"
-          + "目標が曖昧なままだと成果が出にくくなります。まず 1 年後のゴールを設定し、逆算して行動してみてください。",
+        type: "checklist",
+        items: [
+          { label: "A", title: "BNI コネクトに登録（PC・スマホ両方）",                 desc: "活動管理・リファーラル記録・メンバーリスト。", linkUrl: "${LINK:bniConnect}",      linkText: "bniconnectglobal.com" },
+          { label: "B", title: "BNI アカデミーに登録（PC・スマホ両方）",               desc: "MSP2.0・MS アドオン・各種トレーニングの受講場所。", linkUrl: "${LINK:bniAcademy}", linkText: "bni.jp/ja/academy" },
+          { label: "C", title: "LINE グループへの参加",                                 desc: "①AQUA 全体 LINE　②コミュニティ広場　③ひろみ登録　④チーム LINE　⑤メンターコーディネーター LINE — チームと組織分担リーダーから招待が届きます。" },
+          { label: "D", title: "Facebook グループに参加",                               desc: "AQUA の Facebook グループへの参加。招待が届いたら参加してください。" },
+        ],
       },
 
       { type: "h3", text: "② 1to1 の準備をする" },
       {
         type: "steps",
         items: [
-          { label: "A", title: "略歴シートを作成する",         desc: "自分のビジネス・経歴・リファーラル先を記載したプロフィールシートです。メインプレゼン前の T-UP（紹介文）作成にも使われます。データはメンターから送付されます。" },
-          { label: "B", title: "GAINS シートを作成する",        desc: "Goals（目標）/ Accomplishments（実績）/ Interests（興味）/ Networks（人脈）/ Skills（スキル）を記載します。1to1 ミーティングで相互理解を深めるために使います。" },
-          { label: "C", title: "トピックメンター #6 から 1to1 を進める", desc: "パスポートプログラムに沿って、はじめに #6 の方と 1to1 を実施してください。その後 #1〜#9 は順不同で進め、最後に #10 の方と実施することを推奨しています。" },
+          { label: "A", title: "トピックメンター #6 から 1to1 を進める", desc: "パスポートプログラムに沿って、はじめに #6 の方と 1to1 を実施してください。その後 #1〜#9 は順不同で進め、最後に #10 の方と実施することを推奨しています。" },
+          { label: "B", title: "略歴シートを作成する",         desc: "自分のビジネス・経歴・リファーラル先を記載したプロフィールシートです。メインプレゼン前の T-UP（紹介文）作成にも使われます。データはメンターから送付されます。" },
+          { label: "C", title: "GAINS シートを作成する",        desc: "Goals（目標）/ Accomplishments（実績）/ Interests（興味）/ Networks（人脈）/ Skills（スキル）を記載します。1to1 ミーティングで相互理解を深めるために使います。" },
         ],
       },
 
@@ -613,18 +619,12 @@ window.SECTIONS = [
       {
         type: "tiers",
         rows: [
-          { label: "必須 / 期限あり",     variant: "urg",  items: ["MSP2.0（全 8 コース）— 30 日以内開始・60 日以内完了", "MS アドオン（全 8 コース）— 30 日以内受講"] },
+          { label: "必須 / 期限あり",     variant: "urg",  items: ["MSP2.0（全 8 コース）— 30 日以内に受講", "MS アドオン（全 8 コース）— 60 日以内に受講"] },
           { label: "キースキルズ WS",     variant: "gray", items: ["1to1", "メインプレゼンテーション", "ウィークリープレゼンテーション", "リファーラル"] },
           { label: "スキルトレーニング",  variant: "gray", items: ["チャプターディベロップメント", "ネットワーキングスキル", "BNI ベーシック", "リファーラルマーケティング講座"] },
           { label: "上位トレーニング",    variant: "dark", items: ["チームリーダーズトレーニング", "BNI スタンダード M1 M2", "メンバーズフォーラム", "新メンバーズフォーラム"] },
         ],
       },
-      {
-        type: "box",
-        variant: "gray",
-        html: "<strong>受講場所：</strong> BNI Business Builder › Business Builder Training › メンバーサクセスプログラム（MSP2.0）",
-      },
-
       { type: "h3", text: "④ イベント・他チャプターとの交流" },
       {
         type: "grid",
@@ -642,8 +642,8 @@ window.SECTIONS = [
         type: "table",
         head: ["時期", "主な行動", "ポイント"],
         rows: [
-          ["入会〜1 ヶ月",  "MSP2.0 開始・MS アドオン受講・BNI コネクト登録・メンター#6 から 1to1 開始", "まず「顔を覚えてもらう」Visibility 期"],
-          ["1〜3 ヶ月",     "MSP2.0 完了・メンター 10 名との 1to1 完了・毎週 1 件リファーラル・ビジター招待 1 名以上", "VCP の V→C へ移行する時期"],
+          ["入会〜1 ヶ月",  "MSP2.0 受講・BNI コネクト登録・メンター#6 から 1to1 開始", "まず「顔を覚えてもらう」Visibility 期"],
+          ["1〜3 ヶ月",     "MS アドオン受講・メンター 10 名との 1to1 完了・毎週 1 件リファーラル・ビジター招待 1 名以上", "VCP の V→C へ移行する時期"],
           ["3〜6 ヶ月",     "メインプレゼン準備・ビジター招待継続・1to1 を全メンバーに広げる", "信頼関係が深まり始めます"],
           ["6〜12 ヶ月",    "役割・委員会への参加検討・更新準備（7 ヶ月レビュー）・リファーラル増加", "チャプターへの貢献でさらに信頼が高まります"],
         ],
@@ -677,18 +677,6 @@ window.SECTIONS = [
         variant: "gray",
         label: "山内ディレクター",
         html: "AQUAチャプターのビジネス拡大に向けて、活動を円滑に行なっていくためのサポートいただく役割",
-      },
-
-      { type: "h3", text: "初回定例会チェックリスト" },
-      {
-        type: "grid",
-        cols: 2,
-        cells: [
-          { title: "✅ 6:20 までに入室",          body: "表示名を「ルーム番号／名前／カテゴリー」に変更してください。", accent: true },
-          { title: "✅ ウィークリープレゼン 30 秒", body: "「（カテゴリー）の（名前）です。〇〇な方を紹介してください！」", accent: true },
-          { title: "✅ 宣誓式「はい、誓います。」", body: "倫理規定 6 項目の読み上げ後に宣言 → 正式メンバー加入。" },
-          { title: "✅ 8:45〜 オリエンテーション",  body: "新メンバーブレイクアウトルームでメンターチームがサポートします。" },
-        ],
       },
     ],
   },
@@ -878,7 +866,7 @@ window.SECTIONS = [
             heading: "📚 ツール",
             items: [
               { icon: "🔗", url: "${LINK:bniConnect}",      title: "BNI コネクト",                  sub: "活動管理・リファーラル記録・メンバーリスト" },
-              { icon: "🎓", url: "${LINK:businessBuilder}", title: "BNI ビジネスビルダー",          sub: "MSP2.0・MS アドオン・トレーニング受講" },
+              { icon: "🎓", url: "${LINK:bniAcademy}", title: "BNI アカデミー",          sub: "MSP2.0・MS アドオン・トレーニング受講" },
               { icon: "👥", url: "${LINK:memberList}",      title: "AQUA メンバーリスト",            sub: "チャプターメンバーの一覧" },
               { icon: "🏢", url: "${LINK:region}",          title: "大阪シティセントラル リージョン", sub: "リージョン公式サイト" },
             ],
@@ -934,8 +922,8 @@ window.SECTIONS = [
           { term: "T-UP（ティーアップ）",       def: "メインプレゼン前に司会が行う、発表者の紹介文のことです。略歴シートをもとに作成されます。" },
           { term: "カテゴリー",                 def: "各メンバーの専門分野のことです。1 チャプターに 1 カテゴリー 1 名限定です。他のメンバーのカテゴリーを侵害しないよう注意しましょう。" },
           { term: "ゴールドクラブ",             def: "BNI 内の特別表彰ランクです。TYFCB・リファーラル数などの実績によって認定されます。" },
-          { term: "MSP2.0",                     def: "メンバーサクセスプログラムのことです。入会後 30 日以内に開始し、60 日以内に完了することが必須です。全 8 コースあります。" },
-          { term: "MS アドオン",                def: "MS アドオンプログラムのことです。メインプレゼンの登壇に必要です。入会後 30 日以内に受講してください。全 8 コースあります。" },
+          { term: "MSP2.0",                     def: "メンバーサクセスプログラムのことです。入会後 30 日以内の受講が必須です。全 8 コースあります。" },
+          { term: "MS アドオン",                def: "MS アドオンプログラムのことです。メインプレゼンの登壇に必要です。入会後 60 日以内に受講してください。全 8 コースあります。" },
         ],
       },
     ],
@@ -968,7 +956,7 @@ window.SECTIONS = [
           { cat: "📊 スコア・評価について", q: "メンバートラフィックライトとは何ですか？", a: "各メンバーのパフォーマンスを信号機の色で表したレポートです。<br><br>🟢 <strong>グリーン</strong>：良好なパフォーマンス<br>🟡 <strong>イエロー</strong>：改善余地あり<br>🔴 <strong>レッド</strong>：要サポート<br>⬜ <strong>グレー</strong>：新メンバー（MSP 修了・1to1 実施・定期参加でイエローになれます）" },
           { cat: "📊 スコア・評価について", q: "CEU ポイントはどうすれば増えますか？", a: "トレーニング・ワークショップへの参加、1to1 ミーティングで積まれます。期間中 <strong>20pt 以上</strong> でグリーンになります。積極的にトレーニングに参加することが最も効果的です。" },
 
-          { cat: "🔧 ツール・登録について", q: "BNI コネクトと BNI ビジネスビルダーの違いは何ですか？", a: "<strong>BNI コネクト</strong>：メンバーの活動管理ツールです。出席・リファーラル・1to1 の記録、メンバーリスト管理に使います。<br><br><strong>BNI ビジネスビルダー</strong>：BNI の学習プラットフォームです。MSP2.0・MS アドオン・各種トレーニングコースを受講する場所です。<br><br>どちらも PC サイトとスマホアプリの両方でご登録・ご利用ください。" },
+          { cat: "🔧 ツール・登録について", q: "BNI コネクトと BNI アカデミーの違いは何ですか？", a: "<strong>BNI コネクト</strong>：メンバーの活動管理ツールです。出席・リファーラル・1to1 の記録、メンバーリスト管理に使います。<br><br><strong>BNI アカデミー</strong>：BNI の学習プラットフォームです。MSP2.0・MS アドオン・各種トレーニングコースを受講する場所です。<br><br>どちらも PC サイトとスマホアプリの両方でご登録・ご利用ください。" },
           { cat: "🔧 ツール・登録について", q: "GAINS シートと略歴シートはどう違いますか？", a: "<strong>GAINS シート</strong>：1to1 ミーティングで使うプロフィールシートです。Goals・Accomplishments・Interests・Networks・Skills を記載します。お互いの理解を深めるために活用します。<br><br><strong>略歴シート</strong>：メインプレゼン前の T-UP（紹介文）作成のために書記兼会計に提出するシートです。ビジネス経歴・専門分野・理想のリファーラル先を記載します。" },
         ],
       },
