@@ -65,15 +65,15 @@ window.ZOOM_INFO = {
 // ─────────────────────────────────────────
 window.LINKS = {
   zoom:            "https://bnionline.zoom.us/j/99705457337?pwd=UUtueU5NTzc4MW1KR0dUcURSWjRKUT09",
-  breakoutRoom:    "https://docs.google.com/spreadsheets/d/1pEDZ0BiPhbrmRxixTb5vy5nADNt78PhKCT1pzBg7iJc/edit?usp=sharing",
+  breakoutRoom:    "https://fourthplace43.com/group/bni/visitor-host/rooms/",
   bniConnect:      "https://www.bniconnectglobal.com",
   businessBuilder: "https://www.bnibusinessbuilder.com",
   bniAcademy:      "https://bni.jp/ja/academy",
   memberList:      "https://aqua-bni.com/",
   region:          "https://bni-oc.com",
   profileForm:     "https://docs.google.com/forms/d/e/1FAIpQLSfEU8AevbV3GvkGsZAsnA2zU1a-cggW8-r_eaJigEj2DCFSEw/viewform?usp=dialog",
-  visitorApply:    "https://forms.gle/aRi7yu469otwoXwL7",
-  visitorSurvey:   "https://forms.gle/KfFcmK66E3wDDvKV6",
+  visitorApply:    "https://docs.google.com/forms/d/e/1FAIpQLSfyjkTwvIvz8mxWbLRtHrSYyMfOqEMyqrysVHeHpbG-M1JNfw/viewform",
+  visitorSurvey:   "https://fourthplace43.com/group/bni/visitor-host/rooms/",
   visitorPdf:      "https://givers-gain.life/bni/aqua/wp-content/uploads/sites/2/2025/12/2512_visitar_0620ver.pdf",
   visitorGraph:    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQPLef-DKARbqr5zG0bJjq6TtKTH3et6_R2YvrhFFEKvMrsa0cZvF5dNTkzFh57TiEDelAXgHqhu8Gh/pubchart?oid=1456599379&format=image",
 };
@@ -735,7 +735,7 @@ window.SECTIONS = [
         type: "steps",
         items: [
           { label: "A", title: "ビジター参加申し込みフォームを共有",  desc: "<a href=\"${LINK:visitorApply}\" target=\"_blank\" rel=\"noopener\">▶ ビジター参加申し込みフォーム</a>", variant: "gray" },
-          { label: "B", title: "定例会前 日曜 18:00 までに事前アンケート記入（招待者が記入）", desc: "<a href=\"${LINK:visitorSurvey}\" target=\"_blank\" rel=\"noopener\">▶ ビジター事前アンケートフォーム</a>", variant: "gray" },
+          { label: "B", title: "定例会前 日曜 18:00 までに招待者の事前情報を記入（招待者が記入）", desc: "<a href=\"${LINK:visitorSurvey}\" target=\"_blank\" rel=\"noopener\">▶ 今日のブレイクアウトルーム</a>のビジターのカード「招待者の方：事前情報を書く」から入力", variant: "gray" },
           { label: "C", title: "定例会当日のご案内を共有", desc: "<a href=\"${LINK:visitorPdf}\" target=\"_blank\" rel=\"noopener\">▶ ビジター向け定例会ご案内 PDF</a><br>Zoom 入室：6:30〜 / カメラ ON・音声 OFF / 表示名「V お名前／職種」", variant: "gray" },
           { label: "D", title: "メンバーリストも事前に共有すると◎", desc: "<a href=\"${LINK:memberList}\" target=\"_blank\" rel=\"noopener\">▶ AQUA メンバーリスト</a>", variant: "dark" },
         ],
@@ -876,7 +876,7 @@ window.SECTIONS = [
             items: [
               { icon: "📝", url: "${LINK:profileForm}",   title: "プロフィール登録フォーム",                 sub: "入会時に記入するフォーム" },
               { icon: "📝", url: "${LINK:visitorApply}",  title: "ビジター参加申し込みフォーム",             sub: "ビジターに共有する URL" },
-              { icon: "📋", url: "${LINK:visitorSurvey}", title: "ビジター事前アンケート（招待者が記入）",    sub: "定例会前 日曜 18:00 締め切り" },
+              { icon: "📋", url: "${LINK:visitorSurvey}", title: "招待者の事前情報の入力（招待者が記入）",    sub: "ビジターのカード「招待者の方：事前情報を書く」から。定例会前 日曜 18:00 締め切り" },
               { icon: "📄", url: "${LINK:visitorPdf}",    title: "ビジター向け定例会ご案内 PDF",              sub: "招待前にビジターへ共有する資料" },
               { icon: "📈", url: "${LINK:visitorGraph}",  title: "ビジター状況グラフ",                       sub: "チャプターのビジター招待実績" },
             ],
