@@ -72,7 +72,7 @@ window.LINKS = {
   memberList:      "https://aqua-bni.com/",
   region:          "https://bni-oc.com",
   profileForm:     "https://docs.google.com/forms/d/e/1FAIpQLSfEU8AevbV3GvkGsZAsnA2zU1a-cggW8-r_eaJigEj2DCFSEw/viewform?usp=dialog",
-  visitorApply:    "https://docs.google.com/forms/d/e/1FAIpQLSfyjkTwvIvz8mxWbLRtHrSYyMfOqEMyqrysVHeHpbG-M1JNfw/viewform",
+  visitorApply:    "https://forms.gle/HLpUHVwa5NDFPM4B9",
   visitorSurvey:   "https://fourthplace43.com/group/bni/visitor-host/rooms/",
   visitorPdf:      "https://givers-gain.life/bni/aqua/wp-content/uploads/sites/2/2025/12/2512_visitar_0620ver.pdf",
   visitorGraph:    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQPLef-DKARbqr5zG0bJjq6TtKTH3et6_R2YvrhFFEKvMrsa0cZvF5dNTkzFh57TiEDelAXgHqhu8Gh/pubchart?oid=1456599379&format=image",
